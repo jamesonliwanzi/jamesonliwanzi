@@ -1,10 +1,45 @@
 - 👋 Hi, I’m @jamesonliwanzi
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 💞️ Je cherche à collaborer sur...
+
+- 📫 Commentez-moi joindre...
 
 <!---
 jamesonliwanzi/jamesonliwanzi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription</title>
+</head>
+<body>
+	<h1>Inscription</h1>
+	<form action="traitement_inscription.php" method="POST">
+		<label for="nom">Nom :</label>
+		<input type="text" id="nom" name="nom" required><br>
+
+		<label for="prenom">Prénom :</label>
+		<input type="text" id="prenom" name="prenom" required><br>
+
+		<label for="email">Adresse e-mail :</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="password">Mot de passe :</label>
+		<input type="password" id="password" name="password" required><br>
+
+		<label for="genre">Genre :</label>
+		<select id="genre" name="genre" required>
+			<option value="femme">Femme</option>
+			<option value="homme">Homme</option>
+			<option value="autre">Autre</option>
+		</select><br>
+
+		<label for="date_naissance">Date de naissance :</label>
+		<input type="date" id="date_naissance" name="date_naissance" required><br>
+
+		<input type="submit" value="S'inscrire">
+	</form>
+</body>
+</html>
